@@ -9,6 +9,7 @@ body {
     color: white;
     font-family: 'Righteous', sans-serif;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .logo {
@@ -76,7 +77,7 @@ h3 {
 .apology {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 200px 200px;
+    grid-template-rows: 1fr 1fr;
     grid-template-areas:
     "apologyImg apologyText"
     "apologyImg revivalButton"
@@ -85,7 +86,7 @@ h3 {
 .apologyItem {
     margin: 5px;
     display: grid;
-    width: 70%;
+    width: 80%;
 }
 
 #apologyImg {
@@ -205,8 +206,62 @@ a {
     font-size: 1em;
 }
 
+.footer {
+    width: 100%;
+    background-color: #0C6BA6;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    font-size: 1em;
+}
+
+.Contact {
+    background-color: #D90429;
+    border: 2px solid black;
+    text-align: center;
+}
 @media (max-width: 1100px) {
+    .apology {
+        margin: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: .5fr .5fr .8fr .5fr;
+        grid-template-areas:
+        "apologyImg"
+        "apologyImg"
+        "apologyText"
+        "revivalButton"
+    }
+    #apologyImg {
+        margin: auto;
+    }
     #revivalButton {
-        margin-top: 18%;
+        margin: auto;
+    }
+    #apologyText {
+        margin: auto;
+    }
+}
+
+@media only screen (max-width: 600px) {
+    .apology {
+        margin: auto;
+        grid-template-columns: 100%;
+        grid-template-rows: .3fr .3fr .3fr .2fr;
+        grid-template-areas:
+        "apologyImg"
+        "apologyImg"
+        "apologyText"
+        "revivalButton"
+    }
+    #apologyImg {
+        margin: auto;
+    }
+    #revivalButton {
+        margin: auto;
+    }
+    #apologyText {
+        margin: auto;
     }
 }
