@@ -226,7 +226,7 @@ a {
     .apology {
         margin: auto;
         grid-template-columns: 100%;
-        grid-template-rows: .5fr .5fr .8fr .5fr;
+        grid-template-rows: .5fr .5fr .5fr .4fr;
         grid-template-areas:
         "apologyImg"
         "apologyImg"
@@ -244,11 +244,11 @@ a {
     }
 }
 
-@media only screen (max-width: 600px) {
+@media (max-width: 600px) {
     .apology {
         margin: auto;
         grid-template-columns: 100%;
-        grid-template-rows: .3fr .3fr .3fr .2fr;
+        grid-template-rows: .5fr .5fr .3fr .2fr;
         grid-template-areas:
         "apologyImg"
         "apologyImg"
@@ -263,5 +263,6 @@ a {
     }
     #apologyText {
         margin: auto;
+        font-size: 12px;
     }
 }
