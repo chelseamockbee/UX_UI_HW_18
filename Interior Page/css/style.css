@@ -1,0 +1,79 @@
+body {
+    background-color: #dacbbc;
+}
+
+#navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    font-family: 'Righteous', sans-serif;
+    font-size: x-large;
+}
+
+.logo {
+    padding-right: 20%;
+    padding: 1%;
+}
+
+nav {
+    background-color: #002D5C;
+    align-items: center;
+}
+
+.highlight {
+    color: #e20c0c;
+    font-weight: bold;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 5%;
+}
+
+.heroImgContainer {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+h2 {
+    position: absolute;
+    font-family: 'Righteous', sans-serif;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    font-weight: 400;
+    width: 100%;
+}
+
+span {
+    background-color: rgba(0, 0, 0, 0.384);
+}
+.heroImg {
+    padding-bottom: 2%;
+}
+
+.h3 {
+    font-family: 'Righteous', sans-serif;
+    color: white;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.first {
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Righteous', sans-serif;
+    font-size: large;
+}
+
+.revival-first {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
