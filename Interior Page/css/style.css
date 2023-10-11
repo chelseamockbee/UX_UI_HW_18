@@ -48,11 +48,9 @@ h2 {
     width: 100%;
 }
 
-span {
-    background-color: rgba(0, 0, 0, 0.384);
-}
 .heroImg {
     padding-bottom: 2%;
+    filter: brightness(70%);
 }
 
 .h3 {
@@ -68,12 +66,112 @@ span {
 
 h3 {
     font-family: 'Righteous', sans-serif;
-    font-size: large;
+    font-size: medium;
+    text-align: center;
 }
 
-.revival-first {
+.apology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 200px;
+    grid-template-areas:
+    "apologyImg apologyText"
+    "apologyImg revivalButton"
+}
+
+.apologyItem {
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    width: 70%;
+}
+
+#apologyImg {
+    grid-area: apologyImg;
+    margin-left: 40%;
+    width: 200px;
+    height: auto;
+    border: 10px solid white;
+}
+
+#apologyText {
+    grid-area: apologyText;
+    font-family: 'Poppins', sans-serif;
+}
+
+#revivalButton {
+    grid-area: revivalButton;
+    font-family: 'Poppins', sans-serif;
+    color: #002D5C;
+}
+
+a {
+    background-color: lightblue;
+    max-height: 25px;
+    max-width: fit-content;
+}
+
+.revival-2022 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 350px;
+    height: 466px;
+}
+.gridContainer {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "revival-2021 revival-2020 revival-2019"
+    "revival-2016 revival-2015 revival-2014"
+    "revival-2013 revival-2012 revival-2011"
+}
+
+#revival-2021 {
+    grid-area: revival-2021;
+}
+
+#revival-2020 {
+    grid-area: revival-2020;
+}
+
+#revival-2019 {
+    grid-area: revival-2019;
+}
+
+#revival-2016 {
+    grid-area: revival-2016;
+}
+
+#revival-2015 {
+    grid-area: revival-2015;
+}
+
+#revival-2014 {
+    grid-area: revival-2014;
+}
+
+#revival-2013 {
+    grid-area: revival-2013;
+}
+
+#revival-2012 {
+    grid-area: revival-2012;
+}
+
+#revival-2011 {
+    grid-area: revival-2011;
+}
+
+.gridItem {
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    place-items: center;
+}
+
+.gridItem img {
+    width: 350px;
+    height: 466px;
 }
