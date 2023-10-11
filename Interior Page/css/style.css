@@ -81,7 +81,6 @@ h3 {
 
 .apologyItem {
     margin: 5px;
-    cursor: pointer;
     display: grid;
     width: 70%;
 }
@@ -103,6 +102,7 @@ h3 {
     grid-area: revivalButton;
     font-family: 'Poppins', sans-serif;
     color: #002D5C;
+    cursor: pointer;
 }
 
 a {
